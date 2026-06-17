@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith S | Software Developer</title>
+    <meta name="description"
+        content="Rohith S - Professional Software Developer specializing in Full Stack Development, Java, React. Final year CS student at Knowledge Institute of Technology.">
+    <meta name="keywords"
+        content="Rohith S, Software Developer, Full Stack Developer, Java Developer, React Developer, Portfolio, Knowledge Institute of Technology">
+    <meta name="author" content="Rohith S">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rohith-portfolio.netlify.app">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rohith S | Software Developer">
+    <meta property="og:description" content="Professional Software Developer - Full Stack, Java, React">
+    <meta property="og:url" content="https://rohith-portfolio.netlify.app">
+    <meta property="og:site_name" content="Rohith S Portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rohith S | Software Developer">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rohith S",
+        "url": "https://rohith-portfolio.netlify.app",
+        "jobTitle": "Software Developer",
+        "email": "rohithprsnl2005@gmail.com",
+        "telephone": "+918608900563",
+        "alumniOf": "Knowledge Institute of Technology",
+        "knowsAbout": ["Java", "C Programming", "HTML", "CSS", "JavaScript", "React", "MySQL", "Oracle", "R"],
+        "sameAs": [
+            "https://github.com/rohithprsnl",
+            "https://linkedin.com/in/rohithprsnl"
+        ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">RS<span class="nav-logo-dot">.</span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link btn-nav">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-grid">
+            <div class="hero-shapes">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Open to opportunities
+                </div>
+                <h1 class="hero-title">
+                    Rohith<br>
+                    <span class="hero-title-accent">S</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer</p>
+                <p class="hero-desc">
+                    Final year Computer Science student at Knowledge Institute of Technology with hands-on experience in
+                    Full Stack development. Passionate about building clean, scalable software solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-file-arrow-down"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fas fa-envelope"></i> Get in touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/rohithprsnl" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/rohithprsnl" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:rohithprsnl2005@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo-card">
+                    <div class="hero-photo-frame">
+                        <img src="WhatsApp Image 2026-06-17 at 12.10.07 PM.jpeg" alt="Rohith S - Software Developer"
+                            class="hero-photo" loading="eager">
+                    </div>
+                    <div class="hero-photo-badge">
+                        <div class="hero-badge-inner">
+                            <i class="fas fa-code"></i>
+                            <span>Full Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">About</span>
+                <h2 class="section-title">Get to know me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="about-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Education</h3>
+                    <p class="about-institute">Knowledge Institute of Technology</p>
+                    <p class="about-degree">B.E. Computer Science Engineering</p>
+                    <p class="about-year">2023 - 2027 | CGPA: 7.04/10</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Experience</h3>
+                    <p class="about-institute">STACKQUEUE, LiTZTech, IPCS Global, InTernPe</p>
+                    <p class="about-degree">Web Development & Java Internships</p>
+                    <p class="about-year">4 internships completed</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-icon"><i class="fas fa-code"></i></div>
+                    <h3>Skills</h3>
+                    <p class="about-institute">Java, C, HTML, CSS, JavaScript, React</p>
+                    <p class="about-degree">MySQL, Oracle, R, MS Office, Photoshop</p>
+                    <p class="about-year">Full Stack Development</p>
+                </div>
+            </div>
+            <div class="about-bio reveal">
+                <p>Final year Computer Science student with hands-on experience in <strong>Full Stack
+                        Development</strong>. My goal is to join a company where I can utilize my skills and gain
+                    further experience enhancing the company's productivity and reputation.</p>
+                <p>I have a strong foundation in <strong>C</strong>, <strong>Java</strong>, and <strong>R</strong>
+                    programming, with practical training from multiple internships and hackathons. I speak
+                    <strong>English</strong> and <strong>Tamil</strong>, and have actively participated in
+                    <strong>Codesangram 2.0 Hackathon</strong> and <strong>Codeathon</strong> events.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technologies I work with</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <span class="skill-name">C Programming</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <span class="skill-name">CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <span class="skill-name">React.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <span class="skill-name">MySQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <span class="skill-name">Oracle</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fab fa-r-project"></i></div>
+                    <span class="skill-name">R Programming</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                    <span class="skill-name">Git & GitHub</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software Tools -->
+            <div class="section-header reveal" style="margin-top: 80px;">
+                <span class="section-label">Software Tools</span>
+                <h2 class="section-title">Tools & Platforms</h2>
+            </div>
+            <div class="extra-grid reveal">
+                <div class="extra-card">
+                    <i class="fas fa-file-excel"></i>
+                    <h3>MS Office - Excel</h3>
+                </div>
+                <div class="extra-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Canva</h3>
+                </div>
+                <div class="extra-card">
+                    <i class="fas fa-image"></i>
+                    <h3>Adobe Photoshop</h3>
+                </div>
+                <div class="extra-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Tally</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">Featured work</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Women Safety & POSH Platform</h3>
+                    <p>Developed a digital solution designed to foster secure, inclusive environments by streamlining
+                        POSH compliance and women safety protocols. Features anonymous grievance reporting and real-time
+                        emergency alerts for legal documentation to ensure organizational transparency.</p>
+                    <div class="project-tech">
+                        <span>Full Stack</span><span>Web Dev</span><span>Safety</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-ticket-alt"></i></div>
+                    <h3>Ticket Booking Site</h3>
+                    <p>Worked on developing a Ticket Booking website with responsive and user-friendly interfaces.
+                        Contributed as an HTML and CSS developer, focusing on layout design, styling, and cross-browser
+                        compatibility.</p>
+                    <div class="project-tech">
+                        <span>HTML</span><span>CSS</span><span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-icon"><i class="fas fa-bus"></i></div>
+                    <h3>Smart Bus Monitoring System</h3>
+                    <p>Developing an IoT-driven tracking system to provide real-time GPS location and accurate arrival
+                        predictions for public transit. Currently building the backend infrastructure and mobile
+                        interface to enable live data streaming between vehicles and commuters.</p>
+                    <div class="project-tech">
+                        <span>IoT</span><span>GPS</span><span>Ongoing</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Internships -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Experience</span>
+                <h2 class="section-title">Where I've worked</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Technologies Training</h3>
+                            <span class="timeline-company">STACKQUEUE</span>
+                            <span class="timeline-date">14 Days Training</span>
+                        </div>
+                        <p>Completed intensive 14-day training program on Frontend Technologies, gaining hands-on
+                            experience with modern web development tools and frameworks.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Java Training</h3>
+                            <span class="timeline-company">InTernPe</span>
+                            <span class="timeline-date">One Month Training</span>
+                        </div>
+                        <p>Completed one month of intensive training on Java programming, covering core concepts, OOP
+                            principles, and application development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Development Training</h3>
+                            <span class="timeline-company">LiTZTech</span>
+                            <span class="timeline-date">July 2024</span>
+                        </div>
+                        <p>Completed 7-day training program on Web Development, learning fundamental concepts of
+                            building modern websites and web applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Web Development Course</h3>
+                            <span class="timeline-company">IPCS Global</span>
+                            <span class="timeline-date">1 Week Course</span>
+                        </div>
+                        <p>Completed 1-week Web Development course, acquiring foundational skills in web technologies
+                            and development practices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications & Achievements -->
+            <div class="section-header reveal" style="margin-top: 80px;">
+                <span class="section-label">Certifications</span>
+                <h2 class="section-title">Credentials</h2>
+            </div>
+            <div class="certs-grid reveal">
+                <div class="cert-card">
+                    <i class="fas fa-trophy"></i>
+                    <h4>Codesangram 2.0 Hackathon</h4>
+                    <p>Participation certificate</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-code"></i>
+                    <h4>Codeathon</h4>
+                    <p>Participation certificate</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-database"></i>
+                    <h4>SQL Mastery with MySQL</h4>
+                    <p>Certification</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Front-End Technologies</h4>
+                    <p>Training certification</p>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="section-header reveal" style="margin-top: 80px;">
+                <span class="section-label">Achievements</span>
+                <h2 class="section-title">Awards & Recognition</h2>
+            </div>
+            <div class="extra-grid reveal">
+                <div class="extra-card">
+                    <i class="fas fa-running"></i>
+                    <h3>100m Athlete</h3>
+                    <p>District Third - 2021</p>
+                </div>
+                <div class="extra-card">
+                    <i class="fas fa-handball"></i>
+                    <h3>Handball</h3>
+                    <p>Zonal Winners - 2023</p>
+                </div>
+                <div class="extra-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Relay 4x100m</h3>
+                    <p>District Third - 2021</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages & Additional -->
+    <section class="section" id="achievements" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">More about me</span>
+                <h2 class="section-title">Beyond the code</h2>
+            </div>
+            <div class="extra-grid">
+                <div class="extra-card reveal">
+                    <i class="fas fa-language"></i>
+                    <h3>Languages</h3>
+                    <p>Tamil, English</p>
+                </div>
+                <div class="extra-card reveal">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>12th Grade</h3>
+                    <p>Vaigai Matric Hr Sec School - 79.2%</p>
+                </div>
+                <div class="extra-card reveal">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>10th Grade</h3>
+                    <p>Vaigai Matric Hr Sec School - 100%</p>
+                </div>
+                <div class="extra-card reveal">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Hobbies</h3>
+                    <p>Sports & Athletics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Let's work together</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:rohithprsnl2005@gmail.com">rohithprsnl2005@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+918608900563">+91 86089 00563</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span class="contact-label">Location</span>
+                            <span>Kootathupatty, Salem - 637501</span>
+                        </div>
+                    </div>
+                    <div class="contact-social-links">
+                        <a href="https://github.com/rohithprsnl" target="_blank" rel="noopener"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rohithprsnl" target="_blank" rel="noopener"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:rohithprsnl2005@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">RS<span class="nav-logo-dot">.</span></span>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/rohithprsnl" target="_blank" rel="noopener"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/rohithprsnl" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rohith S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
